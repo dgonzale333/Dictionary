@@ -28,7 +28,6 @@ function translateWord() {
     if (found) break;
   }
 
-  // Si no se encuentra, mostrar mensaje por defecto
   if (!found) {
     translationSpan.textContent = 'No encontrado';
     exampleSpan.textContent = '---';
