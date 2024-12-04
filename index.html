@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diccionario-Traductor</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <div class="container">
+   
+    <div class="translator-box">
+      <input type="text" id="search-word" placeholder="Escribe una palabra..." />
+      <div id="result">
+        <p><strong>Traducción:</strong> <span id="translation">---</span></p>
+        <p><strong>Ejemplo:</strong> <span id="example">---</span></p>
+      </div>
+    </div>
+
+    <div id="categories-container"></div>
+
+    <div class="add-word-box">
+      <h2>Agregar Nueva Palabra</h2>
+      <form id="add-word-form">
+        <input type="text" id="new-english" placeholder="Nueva palabra en inglés" required />
+        <input type="text" id="new-spanish" placeholder="Nueva palabra en español" required />
+        <input type="text" id="new-example" placeholder="Ejemplo de uso" required />
+        <input type="text" id="new-category" placeholder="Categoría" required />
+        <button type="submit">Agregar Palabra</button>
+      </form>
+    </div>
+  </div>
+  <script type="module" src="Objects/app.js"></script>
+</body>
+</html>
+
+
